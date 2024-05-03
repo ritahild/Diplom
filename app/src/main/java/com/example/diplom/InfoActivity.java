@@ -13,7 +13,6 @@ public class InfoActivity extends AppCompatActivity {
     // Define array adapter for ListView
     ArrayAdapter<String> adapter;
 
-    // Define array List for List View data
     ArrayList<String> mylist;
 
     @Override
@@ -21,18 +20,15 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
 
-        // initialise ListView with id
+
         listView = findViewById(R.id.listView);
 
-        // Add items to Array List
+
         mylist = new ArrayList<>();
         mylist.add("a");
         mylist.add("b");
         mylist.add("c");
-        //
 
-
-        // Set adapter to ListView
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mylist);
         listView.setAdapter(adapter);
     }

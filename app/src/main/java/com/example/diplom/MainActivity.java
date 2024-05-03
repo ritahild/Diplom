@@ -14,14 +14,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // assigning ID of the toolbar to a variable
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        // using toolbar as ActionBar
+
         setSupportActionBar(toolbar);
 
 
-        // Display application icon in the toolbar
+
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         getSupportActionBar().setDisplayUseLogoEnabled(true);
@@ -37,20 +37,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        // assigning ID of textView2 to a variable
-//        textView = (TextView) findViewById(R.id.textView2);
-//
-//
-//        // "on click" operations to be performed
-//        textView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//
-//            // incrementing the value of textView
-//            public void onClick( View view ) {
-//                count++;
-//                textView.setText("" + count);
-//            }
-//        });
 
     }
 }

@@ -13,6 +13,30 @@
             android:theme="@style/Theme.Diplom"
             tools:targetApi="31">
         <activity
+                android:name=".GasActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".KaliyActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ComActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".BasActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".FlebActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".PlohadActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ZniiActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".DozaActivity"
+                android:exported="false"/>
+        <activity
                 android:name=".InfoActivity"
                 android:exported="false"/>
         <activity

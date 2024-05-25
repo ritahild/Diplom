@@ -60,8 +60,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/toolbar"
                     app:layout_constraintTop_toTopOf="parent"
-            />
-
+                    android:layout_marginStart="16dp"/>
 
 
 
@@ -70,6 +69,101 @@
     </com.google.android.material.appbar.AppBarLayout>
 
 
+    <Button
+            android:id="@+id/doza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="243dp" app:layout_constraintVertical_bias="0.579"/>
+    <Button
+            android:id="@+id/cnii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="128dp" app:layout_constraintVertical_bias="0.6"/>
+    <Button
+            android:id="@+id/plohad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="p"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp" app:layout_constraintVertical_bias="0.6"/>
+    <Button
+            android:id="@+id/fleb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="243dp" app:layout_constraintVertical_bias="0.499"/>
+    <Button
+            android:id="@+id/bas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="243dp" app:layout_constraintVertical_bias="0.383"/>
+    <Button
+            android:id="@+id/com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="117dp" app:layout_constraintVertical_bias="0.499"/>
+    <Button
+            android:id="@+id/kaliy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="k"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="128dp" app:layout_constraintVertical_bias="0.383"/>
+    <Button
+            android:id="@+id/gas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="g"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp" app:layout_constraintVertical_bias="0.383"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

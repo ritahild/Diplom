@@ -4,4 +4,45 @@
     <string name="item2">Item2</string>
     <string name="item3">Item3</string>
     <string name="item4">Item4</string>
+    <string-array name="Animal">
+        <item>Кот</item>
+        <item>Собака</item>
+
+    </string-array>
+    <string-array name="Dyhsistem">
+        <item>Bain</item>
+        <item>Circle</item>
+        <item>Humphrey</item>
+        <item>Lack</item>
+        <item>Mac</item>
+        <item>Mini</item>
+        <item>T</item>
+
+
+    </string-array>
+    <string-array name="Nabor">
+        <item>Нет</item>
+        <item>20</item>
+        <item>60</item>
+
+    </string-array>
+    <string-array name="Time">
+        <item>Час</item>
+        <item>Минута</item>
+
+    </string-array>
+    <string-array name="Kaliy">
+        <item>3.5-5.0</item>
+    <item>3.0-3.5</item>
+    <item>2.5-3.0</item>
+    <item>2.0-2.5</item>
+    <item>-2.0</item>
+
+    </string-array>
+    <string-array name="Hitkaliy">
+        <item>250</item>
+        <item>500</item>
+        <item>1000</item>
+
+    </string-array>
 </resources>

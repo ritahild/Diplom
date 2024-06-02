@@ -16,7 +16,7 @@ public class PlohadActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
 
     public EditText e1;
-    TextView t1;
+    TextView t1,t2;
     Button resultTextView;
     int num1;
     @Override
@@ -48,6 +48,7 @@ public class PlohadActivity extends AppCompatActivity {
         e1 = findViewById(R.id.num);
 
         t1 = findViewById(R.id.result);
+//        t2 = findViewById(R.id.d1);
         resultTextView = findViewById(R.id.sum);
 
         resultTextView.setOnClickListener(new View.OnClickListener() {
@@ -62,7 +63,7 @@ public class PlohadActivity extends AppCompatActivity {
 
                 double result = v2/v3;
 
-                resultTextView.setText("Result: " + result);
+                t1.setText("Result: " + result);
             }
         });
 

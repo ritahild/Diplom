@@ -26,7 +26,7 @@
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#0F9D58"
+                    android:background="#49C178"
                     android:minHeight="?attr/actionBarSize"
                     android:theme="?attr/actionBarTheme"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -38,29 +38,30 @@
 
             <Button
                     android:id="@+id/info"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="59dp"
+                    android:layout_height="38dp"
                     android:layout_marginEnd="10dp"
-                    android:text="=-="
                     android:textColor="#ffff"
+                    android:backgroundTint="#113E26"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/toolbar"
                     app:layout_constraintTop_toTopOf="parent"
-            />
+                    app:icon="@drawable/baseline_info_24"/>
             <Button
                     android:id="@+id/back"
-                    android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:text="search"
+                    android:layout_width="52dp"
+                    android:layout_height="41dp"
+
                     android:textColor="#ffff"
+                    android:backgroundTint="#113E26"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/toolbar"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginStart="16dp"/>
+                    android:layout_marginStart="16dp" app:icon="@drawable/baseline_pentagon_24"/>
 
 
 
@@ -71,95 +72,40 @@
 
     <Button
             android:id="@+id/doza"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="d"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#7FEFCF"
+
+
             android:textColor="#ffff"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteY="255dp" tools:layout_editor_absoluteX="130dp"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            android:layout_marginTop="120dp" app:layout_constraintHorizontal_bias="0.498"
+            app:icon="@drawable/baseline_local_hospital_24"/>
     <Button
             android:id="@+id/cnii"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="c"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#7FEFCF"
             android:textColor="#ffff"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteY="418dp" tools:layout_editor_absoluteX="161dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/doza"
+            android:layout_marginTop="72dp" app:layout_constraintHorizontal_bias="0.498"
+            app:icon="@drawable/baseline_local_drink_24" app:iconPadding="50dp" app:iconTintMode="src_atop"/>
     <Button
             android:id="@+id/plohad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="p"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#7FEFCF"
             android:textColor="#ffff"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteY="585dp" tools:layout_editor_absoluteX="208dp"/>
-    <!--    <Button-->
-<!--            android:id="@+id/fleb"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="f"-->
-<!--            android:textColor="#ffff"-->
-<!--            android:textSize="18sp"-->
-<!--            android:textStyle="bold"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.475" app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/com" app:layout_constraintHorizontal_bias="0.616"/>-->
-<!--    <Button-->
-<!--            android:id="@+id/bas"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="b"-->
-<!--            android:textColor="#ffff"-->
-<!--            android:textSize="18sp"-->
-<!--            android:textStyle="bold"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.3" app:layout_constraintEnd_toEndOf="parent"-->
-<!--            android:layout_marginEnd="28dp"/>-->
-<!--    <Button-->
-<!--            android:id="@+id/com"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="c"-->
-<!--            android:textColor="#ffff"-->
-<!--            android:textSize="18sp"-->
-<!--            android:textStyle="bold"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.475" app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.21"/>-->
-<!--    <Button-->
-<!--            android:id="@+id/kaliy"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="k"-->
-<!--            android:textColor="#ffff"-->
-<!--            android:textSize="18sp"-->
-<!--            android:textStyle="bold"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.3" app:layout_constraintEnd_toStartOf="@+id/bas"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/gas"/>-->
-<!--    <Button-->
-<!--            android:id="@+id/gas"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="g"-->
-<!--            android:textColor="#ffff"-->
-<!--            android:textSize="18sp"-->
-<!--            android:textStyle="bold"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.3" app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.049"/>-->
-
+            app:layout_constraintTop_toBottomOf="@+id/cnii" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="72dp"
+            app:layout_constraintHorizontal_bias="0.498" app:iconPadding="50dp" app:icon="@drawable/baseline_pets_24"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

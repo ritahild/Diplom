@@ -15,7 +15,7 @@ public class ZniiActivity extends AppCompatActivity {
 
 
     public EditText e1, e2, e3, e4, e5;
-    TextView t1;
+    TextView t1,t2,t3,t4,t5,t6;
     Button resultTextView;
 
     @Override
@@ -55,12 +55,23 @@ public class ZniiActivity extends AppCompatActivity {
 
         });
 
+
+//
+
+
         e1 = findViewById(R.id.num1);
         e2 = findViewById(R.id.num2);
         e3 = findViewById(R.id.num3);
         e4 = findViewById(R.id.num4);
         e5 = findViewById(R.id.num5);
         t1 = findViewById(R.id.result);
+
+//        t2 = findViewById(R.id.geg);
+//        t3 = findViewById(R.id.gog);
+//        t4 = findViewById(R.id.gig);
+//        t5 = findViewById(R.id.gug);
+//        t6 = findViewById(R.id.gag);
+
         resultTextView = findViewById(R.id.sum);
 
         resultTextView.setOnClickListener(new View.OnClickListener() {

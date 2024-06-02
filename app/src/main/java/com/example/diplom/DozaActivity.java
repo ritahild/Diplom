@@ -13,7 +13,7 @@ public class DozaActivity extends AppCompatActivity {
 
 
     public EditText e1, e2, e3;
-     TextView t1;
+     TextView t1,t2,t3,t4;
      Button resultTextView;
 
 
@@ -62,6 +62,9 @@ public class DozaActivity extends AppCompatActivity {
         e2 = findViewById(R.id.doz);
         e3 = findViewById(R.id.fo);
         t1 = findViewById(R.id.result);
+//        t2 = findViewById(R.id.y1);
+//        t3 = findViewById(R.id.y2);
+//        t4 = findViewById(R.id.y3);
         resultTextView = findViewById(R.id.res);
 
         resultTextView.setOnClickListener(new View.OnClickListener() {

@@ -48,7 +48,7 @@
                     app:layout_constraintTop_toTopOf="parent"
             />
             <Button
-                    android:id="@+id/search"
+                    android:id="@+id/back"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
                     android:text="search"
@@ -65,6 +65,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
+
     <EditText
             android:id="@+id/num"
             android:layout_width="363dp"
@@ -81,8 +82,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.505"
-            app:layout_constraintVertical_bias="0.534"/>
-
+            app:layout_constraintVertical_bias="0.223"/>
     <TextView
             android:id="@+id/result"
             android:layout_width="356dp"

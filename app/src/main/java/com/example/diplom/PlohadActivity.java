@@ -1,9 +1,13 @@
 package com.example.diplom;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.ui.AppBarConfiguration;
 
 public class PlohadActivity extends AppCompatActivity {
@@ -13,58 +17,55 @@ public class PlohadActivity extends AppCompatActivity {
 
     public EditText e1;
     TextView t1;
+    Button resultTextView;
     int num1;
-    public boolean getNumbers() {
-
-        //checkAndClear();
-        // defining the edit text 1 to e1
-        e1 = (EditText) findViewById(R.id.num);
-
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_plohad);
 
 
-
-        // defining the text view to t1
-        t1 = (TextView) findViewById(R.id.result);
-
-        // taking input from text box 1
-        String s1 = e1.getText().toString();
-        if(s1.equals(null))
-        {
-            String result = "Please enter value 2";
-            e1.setText(result);
-            return false;
-        }
-        else {
-            // converting string to int.
-            num1 = Integer.parseInt(s1);
-
-            // converting string to int.
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
 
+        setSupportActionBar(toolbar);
 
-        }
 
-        return true;
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
+        Button infobutton = findViewById(R.id.info);
+
+
+        infobutton.setOnClickListener(v -> {
+            Intent MaIntent = new Intent(PlohadActivity.this, InfoActivity.class);
+            startActivity(MaIntent);
+
+
+        });
+
+        e1 = findViewById(R.id.num);
+
+        t1 = findViewById(R.id.result);
+        resultTextView = findViewById(R.id.sum);
+
+        resultTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double var1 = Double.parseDouble(e1.getText().toString());
+
+
+                double v2 = (4* var1)+7;
+                double v3 = var1+90;
+
+
+                double result = v2/v3;
+
+                resultTextView.setText("Result: " + result);
+            }
+        });
+
+
     }
-    public void doSum(View v) {
-
-        // get the input numbers
-        if (getNumbers()) {
-            int sum = num1 * 4 +7 ;
-            int rs = num1 +90;
-            int res = sum/rs;
-
-            t1.setText(Integer.toString(res));
-        }
-        else
-        {
-            t1.setText("Error Please enter Required Values");
-        }
-
     }
-    public void clearTextNum1(View v) {
-
-        // get the input numbers
-        e1.getText().clear();
-    }
-}

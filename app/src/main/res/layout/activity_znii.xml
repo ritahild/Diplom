@@ -47,7 +47,7 @@
                     app:layout_constraintTop_toTopOf="parent"
             />
             <Button
-                    android:id="@+id/search"
+                    android:id="@+id/back"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
                     android:text="search"
@@ -64,5 +64,101 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!-- A button to perform 'sum' operation -->
+    <EditText
+            android:id="@+id/num1"
+            android:layout_width="363dp"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:onClick="clearTextNum"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="24dp"
+            app:layout_constraintHorizontal_bias="0.333"/>
+    <EditText
+            android:id="@+id/num2"
+            android:layout_width="363dp"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:onClick="clearTextNum"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/num1"
+            android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.354"/>
+    <EditText
+            android:id="@+id/num3"
+            android:layout_width="363dp"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:onClick="clearTextNum"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/num2" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.354"/>
+    <EditText
+            android:id="@+id/num4"
+            android:layout_width="363dp"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:onClick="clearTextNum"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/num3"
+            android:layout_marginTop="20dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.354"/>
+    <EditText
+            android:id="@+id/num5"
+            android:layout_width="363dp"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:onClick="clearTextNum"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/num4"
+            android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.354"/>
+    <TextView
+            android:id="@+id/result"
+            android:layout_width="356dp"
+            android:layout_height="71dp"
+            android:background="@android:color/white"
+            android:text="result"
+            android:textColorLink="#673AB7"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@+id/num5" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="20dp"
+            app:layout_constraintHorizontal_bias="0.436"/>
+    <Button
+            android:id="@+id/sum"
+            android:layout_width="75dp"
+            android:layout_height="39dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:onClick="doSum"
+            app:layout_constraintTop_toBottomOf="@+id/result"
+            android:layout_marginTop="24dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.092"/>
+
+
+    <!--    android:text="+"-->
+<!--    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="@+id/result" app:layout_constraintHorizontal_bias="1.0"-->
+<!--    app:layout_constraintVertical_bias="0.0"-->
+
+
+
+
+
+<!--    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.529"-->
+<!--    app:layout_constraintVertical_bias="1.0"-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

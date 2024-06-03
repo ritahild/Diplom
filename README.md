@@ -11,8 +11,10 @@ targetSdk 33
 Для запуска приложения на вашем устройстве выполните следующие шаги:
 
 Установите IntelJ IDEA c расширением андроид студия.
-Клонируйте этот репозиторий на ваше устройство с помощью команды git clone https://github.com/ritahild/Diplom.git.
-Установите зависимости npm install
-ЗАпуск приложения идет через арр/src/main/java/com.example.diplom
 
-У
+Клонируйте этот репозиторий на ваше устройство с помощью команды git clone https://github.com/ritahild/Diplom.git.
+
+Установите зависимости npm install
+Запуск приложения идет через арр/src/main/java/com.example.diplom
+
+

@@ -1,49 +1,63 @@
 package com.example.diplom;
 
-import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.widget.Button;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+
 
 public class InfoActivity extends AppCompatActivity {
 
+    ListView userList;
+    TextView header;
+    DatabaseHelper databaseHelper;
+    SQLiteDatabase db;
+    Cursor userCursor;
+    SimpleCursorAdapter userAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
 
-        setSupportActionBar(toolbar);
+
+        header = findViewById(R.id.header);
+        userList = findViewById(R.id.list);
 
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-
-        getSupportActionBar().setDisplayUseLogoEnabled(true);
-
-        Button infobutton = findViewById(R.id.info);
 
 
-        infobutton.setOnClickListener(v -> {
-            Intent MaIntent = new Intent(InfoActivity.this, InfoActivity.class);
-            startActivity(MaIntent);
+        databaseHelper = new DatabaseHelper(getApplicationContext());
+    }
 
 
-        });
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        // открываем подключение
+        db = databaseHelper.getReadableDatabase();
 
-        Button backbutton = findViewById(R.id.back);
+        //получаем данные из бд в виде курсора
+        userCursor =  db.rawQuery("select * from "+ DatabaseHelper.TABLE, null);
+        // определяем, какие столбцы из курсора будут выводиться в ListView
+        String[] headers = new String[] {DatabaseHelper.COLUMN_TITLE, DatabaseHelper.COLUMN_IFR};
+        // создаем адаптер, передаем в него курсор
+        userAdapter = new SimpleCursorAdapter(this, android.R.layout.two_line_list_item,
+                userCursor, headers, new int[]{android.R.id.text1, android.R.id.text2}, 0);
+        header.setText("Найдено элементов: " +  userCursor.getCount());
+        userList.setAdapter(userAdapter);
+    }
 
-
-        backbutton.setOnClickListener(v -> {
-            Intent MaIntent = new Intent(InfoActivity.this, MainActivity.class);
-            startActivity(MaIntent);
-
-
-        });
-
-
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+        // Закрываем подключение и курсор
+        db.close();
+        userCursor.close();
     }
 }

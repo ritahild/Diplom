@@ -16,7 +16,7 @@ public class PlohadActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
 
     public EditText e1;
-    TextView t1,t2;
+    TextView t1;
     Button resultTextView;
     int num1;
     @Override
@@ -45,10 +45,20 @@ public class PlohadActivity extends AppCompatActivity {
 
         });
 
+        Button backbutton = findViewById(R.id.back);
+
+
+        backbutton.setOnClickListener(v -> {
+            Intent MaIntent = new Intent(PlohadActivity.this, MainActivity.class);
+            startActivity(MaIntent);
+
+
+        });
+
         e1 = findViewById(R.id.num);
 
         t1 = findViewById(R.id.result);
-//        t2 = findViewById(R.id.d1);
+
         resultTextView = findViewById(R.id.sum);
 
         resultTextView.setOnClickListener(new View.OnClickListener() {
